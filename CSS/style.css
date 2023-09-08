@@ -1,0 +1,19 @@
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#taskList li {
+    list-style-type: none;
+    font-size: 20px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 40px;
+    padding-right: 10px;
+    background-color: #f9f9f9;
+}
+
+#taskList li:nth-child(even) {
+    background-color: #eee;
+}

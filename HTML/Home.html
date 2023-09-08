@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css"> 
+    <title>To Do List</title>
+</head>
+<body>
+    <h2>To Do List</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter a task...">
+    <button onclick="addListItem()">Add</button>
+
+    <ul id="taskList"></ul>
+
+    <!-- Modal Popup for Adding a Task (hidden by default) -->
+    <div id="addTaskModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeAddTaskModal()">&times;</span>
+            <h2>Add Task</h2>
+            <form onsubmit="addTask(); return false;">
+                <label for="task-title">Task:</label>
+                <input type="text" id="task-title" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/JS/todolist.js"></script>
+</body>
+</html>
